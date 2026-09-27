@@ -1,0 +1,9 @@
+{{ $p := .Page }}
+{{ $d := $p.Lastmod }}
+{{ $diff := now.Sub $d }}
+{{ $totalHours := int $diff.Hours }}
+{{ $days := div $totalHours 24 }}
+{{ $weeks := div $days 7 }}
+{{ $remDays := mod $days 7 }}
+{{ $hours := mod $totalHours 24 }}
+{{ if ge $days 1 }}{{ if ge $weeks 1 }}{{ $weeks }} minggu{{ if gt $remDays 0 }}, {{ $remDays }} hari{{ end }}{{ else }}{{ $days }} hari{{ end }}{{ else }}{{ $hours }} jam{{ end }} yang lalu

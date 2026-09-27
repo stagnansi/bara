@@ -1,0 +1,37 @@
+baseURL = "https://bara.asia/"
+theme = "hugo-bearblog"
+title = "Bara"
+author = "Bara"
+copyright = "Copyright © 2026, Bara."
+locale = "id-id"
+timeZone = "Asia/Jakarta"
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[params]
+  description = "CV dan blog personal Bara."
+  favicon = "images/favicon.png"
+  images = ["images/share.png"]
+  title = "Bara"
+  # hideMadeWithLine = true
+  # enablePostNavigator = true
+  # dateFormat = "2006-01-02"
+
+[markup]
+  [markup.highlight]
+    style = 'friendly'
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[frontmatter]
+  lastmod = [':fileModTime', 'lastmod', 'date']

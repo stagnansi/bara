@@ -1,0 +1,73 @@
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<style>
+  html { scroll-behavior: smooth; }
+
+  :root {
+    --visited-color: var(--link-color);
+    --font-main: 'InterDisplay', 'Inter', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+  @supports (font-variation-settings: normal) {
+    :root {
+      --font-secondary: 'InterVariable', sans-serif;
+    }
+  }
+
+  code, pre, kbd, samp, time { font-family: var(--font-mono); }
+
+  .title h2 { font-weight: 900; }
+  .title h2:before { content: "✦ "; }
+
+  .title, nav, footer {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  footer { font-family: var(--font-main); }
+
+  footer .subscribe-line { font-size: 0.85em; }
+
+  .footer-name { font-weight: 900; }
+
+  .footer-year {
+    color: var(--heading-color);
+    font-variant-numeric: slashed-zero;
+  }
+
+  .footer-dash { opacity: 0.5; }
+
+  .footer-up:hover {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+
+  @media print {
+    header, nav, footer, .title, .subscribe-line {
+      display: none !important;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 11pt;
+      color: #000;
+      background: #fff;
+    }
+    main { margin: 0; }
+    a { color: #000; text-decoration: none; }
+    h1 { font-size: 18pt; }
+    h2 { font-size: 13pt; margin-top: 16pt; }
+    h3 { font-size: 11pt; margin-bottom: 2pt; page-break-after: avoid; break-after: avoid; }
+    p, li { font-size: 11pt; line-height: 1.4; }
+    ul, ol { page-break-inside: avoid; break-inside: avoid; }
+    p { orphans: 2; widows: 2; }
+    @page { margin: 1.5cm; }
+  }
+</style>
