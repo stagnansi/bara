@@ -12,6 +12,9 @@ Format: Keep a Changelog. Tanpa versioning, hanya tanggal.
 - Shortcode now-updated: dari :fileModTime ke lastmod manual di front matter
 - Hapus override [frontmatter] di hugo.toml
 
+### Removed
+- share.png (OG image default tema) dan referensinya di hugo.toml
+
 ### Fixed
 - :fileModTime tidak reliable di Cloudflare Pages. Setiap deploy clone repo baru, semua file dapat mtime = waktu clone, jadi selalu tampil "0 jam".
 

@@ -17,7 +17,6 @@ ignoreErrors = ["error-disable-taxonomy"]
 [params]
   description = "CV dan blog personal Bara."
   favicon = "images/favicon.png"
-  images = ["images/share.png"]
   title = "Bara"
   # hideMadeWithLine = true
   # enablePostNavigator = true
