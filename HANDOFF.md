@@ -48,8 +48,13 @@ hugo.toml pakai baseURL https://bara.asia/ untuk production. Saat development lo
 ### unsafe = true di goldmark
 Homepage _index.md perlu render HTML mentah (ul class="blog-posts"). Tanpa ini, Goldmark membuang HTML.
 
-### :fileModTime untuk shortcode now-updated
-Relative time otomatis berubah setiap build tanpa perlu edit manual. Setiap edit now.md akan reset counter.
+### lastmod manual untuk shortcode now-updated
+Shortcode pakai .Lastmod dari front matter now.md. Alasan: :fileModTime tidak reliable di Cloudflare Pages. Setiap deploy, Cloudflare clone repo baru, semua file dapat mtime = waktu clone, sehingga selalu tampil "0 jam".
+
+Setiap edit now.md, update manual tanggal lastmod di front matter:
+    lastmod = 2026-09-30
+
+Tanpa update manual, "terakhir diperbarui" tidak berubah.
 
 ### Override baseof.html minimal
 Hanya untuk fix deprecated .Site.LanguageCode jadi .Site.Language.Locale. Tidak ada perubahan struktur lain.

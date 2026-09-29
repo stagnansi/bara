@@ -2,6 +2,19 @@
 
 Format: Keep a Changelog. Tanpa versioning, hanya tanggal.
 
+## 2026-09-30
+
+### Added
+- Favicon custom (blue.png, format ICO 3 ukuran + PNG 512x512)
+- Summary hover underline + cursor pointer di halaman Now
+
+### Changed
+- Shortcode now-updated: dari :fileModTime ke lastmod manual di front matter
+- Hapus override [frontmatter] di hugo.toml
+
+### Fixed
+- :fileModTime tidak reliable di Cloudflare Pages. Setiap deploy clone repo baru, semua file dapat mtime = waktu clone, jadi selalu tampil "0 jam".
+
 ## 2026-09-28
 
 ### Added
