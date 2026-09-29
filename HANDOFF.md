@@ -121,6 +121,8 @@ origin: https://github.com/stagnansi/bara.git. Push pakai HTTPS, bukan SSH. Toke
 - content/_index.md - Homepage (ada HTML mentah)
 - content/now.md - Halaman Now (pakai now-updated)
 - content/resume.md - CV format ATS (print CSS aktif)
+- static/favicon.ico - Favicon browser (ICO, 3 ukuran: 16/32/48)
+- static/images/favicon.png - Apple touch icon & SEO (PNG 512x512)
 
 ---
 
