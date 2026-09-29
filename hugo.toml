@@ -33,5 +33,3 @@ ignoreErrors = ["error-disable-taxonomy"]
 [markup.goldmark.renderer]
   unsafe = true
 
-[frontmatter]
-  lastmod = [':fileModTime', 'lastmod', 'date']

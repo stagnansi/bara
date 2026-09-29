@@ -2,6 +2,7 @@
 title = "Now"
 menu = "main"
 weight = 10
+lastmod = 2026-09-28
 +++
 
 # Yang sedang saya kerjakan
