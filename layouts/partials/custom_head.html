@@ -12,14 +12,32 @@
     --font-main: Inter, sans-serif;
     --font-secondary: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    
+    /* Warna Link (Bawaan) & Visited disamakan */
+    --link-color: #0033cc;
+    --visited-color: #0033cc;
   }
+  
   @supports (font-variation-settings: normal) {
     :root { 
       --font-main: InterVariable, sans-serif;
       --font-secondary: InterVariable, sans-serif; 
     }
   }
+  
   time, pre, code, kbd, samp {
     font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  /* Matikan Dark Mode: Paksa semua variabel ke warna Light Mode */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #fff;
+      --heading-color: #222;
+      --text-color: #444;
+      --link-color: #0033cc;
+      --visited-color: #0033cc;
+      --blockquote-color: #222;
+    }
   }
 </style>
