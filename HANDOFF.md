@@ -28,16 +28,17 @@ Selesai:
 - [x] 5 file konten dibuat
 - [x] Build sukses (EXIT=0, 10 pages)
 - [x] Uji lokal (hugo server) — tampilan OK
+- [x] git add -A && git commit (d7549c0)
+- [x] git push --force-with-lease origin main (sukses, d7549c0)
 
 Belum:
-- [ ] git add -A && git commit
-- [ ] git push --force-with-lease origin main (user sudah punya PAT)
 - [ ] Cloudflare Pages build settings (build: hugo --minify, output: public, env: HUGO_VERSION=0.170.1)
 - [ ] Aktifkan [params] favicon & images (saat ini dikomentari, file gambar belum ada)
 - [ ] Isi nyata content/now.md dan content/resume.md (masih placeholder)
 - [ ] Opsional: hideMadeWithLine = true jika ingin sembunyikan footer tema
 
 ## hugo.toml final
+```toml
 baseURL = "https://bara.asia/"
 locale = "id-id"
 defaultContentLanguage = "id"
@@ -67,11 +68,14 @@ ignoreErrors = ["error-disable-taxonomy"]
     lineNos = true
     lineNumbersInTable = false
     codeFences = true
+```
 
 ## .gitignore
+```
 public/
 resources/_gen/
 .hugo_build.lock
+```
 
 ## Struktur content/
 - _index.md — Home, menu weight 1
