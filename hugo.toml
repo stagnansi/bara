@@ -1,0 +1,29 @@
+baseURL = "https://bara.asia/"
+locale = "id-id"
+defaultContentLanguage = "id"
+title = "Bara Ramadhan"
+theme = "hugo-bearblog"
+author = "Bara Ramadhan"
+copyright = "Copyright © 2026, Bara Ramadhan."
+enableRobotsTXT = true
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[languages]
+  [languages.id]
+    locale = "id-id"
+
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[params]
+  description = "Situs pribadi Bara, seorang Marketing Specialist. Berisi kumpulan tulisan, pemikiran acak, serta resume lengkap saya."
+  title = "Bara Ramadhan"
+
+[markup]
+  [markup.highlight]
+    style = "friendly"
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true
