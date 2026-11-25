@@ -101,3 +101,13 @@ resources/_gen/
 - Alias user: alias h='hugo server --noBuildLock --baseURL http://localhost:1313/'
 - Clipboard helper: termux-clipboard-set + Termux:API sudah terpasang
 - PENTING (heredoc): paste multi-baris panjang di Termux bisa terpotong saat paste ke terminal. Saat menulis file besar via heredoc, tulis BERTAHAP per chunk (~20-25 baris per cat, pakai >> untuk append). Verifikasi tiap chunk dengan wc -l dan tail. Hindari /tmp di Termux (sering tidak ada) — pakai ~/ untuk file sementara.
+
+## Custom UI & Styling
+- `layouts/partials/custom_head.html`
+  - Font utama: Inter (via rsms.me).
+  - Font monospace: IBM Plex Mono (untuk `time`, `pre`, `code`, dll).
+  - Link & Visited Color: `#0033cc`.
+  - Dark Mode: Dimatikan (dipaksa selalu light mode via `@media` override).
+- `layouts/partials/footer.html`
+  - Menampilkan copyright, em dash, dan link Instagram (`instagr.am/baramadhans`).
+  - Tahun menggunakan `font-feature-settings: 'zero' 1` (slashed zero).
