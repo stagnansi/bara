@@ -20,6 +20,8 @@ ignoreErrors = ["error-disable-taxonomy"]
 [params]
   description = "Situs pribadi Bara, seorang Marketing Specialist. Berisi kumpulan tulisan, pemikiran acak, serta resume lengkap saya."
   title = "Bara Ramadhan"
+  favicon = "images/favicon.png"
+  images = ["images/share.png"]
 
 [markup]
   [markup.highlight]
