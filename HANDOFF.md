@@ -30,12 +30,12 @@ Selesai:
 - [x] Uji lokal (hugo server) — tampilan OK
 - [x] git add -A && git commit (d7549c0)
 - [x] git push --force-with-lease origin main (sukses, d7549c0)
+- [x] Custom footer via layouts/partials/footer.html (copyright + link Instagram)
 
 Belum:
 - [ ] Cloudflare Pages build settings (build: hugo --minify, output: public, env: HUGO_VERSION=0.170.1)
 - [ ] Aktifkan [params] favicon & images (saat ini dikomentari, file gambar belum ada)
 - [ ] Isi nyata content/now.md dan content/resume.md (masih placeholder)
-- [ ] Opsional: hideMadeWithLine = true jika ingin sembunyikan footer tema
 
 ## hugo.toml final
 ```toml
