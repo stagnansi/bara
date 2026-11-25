@@ -111,3 +111,9 @@ resources/_gen/
 - `layouts/partials/footer.html`
   - Menampilkan copyright, em dash, dan link Instagram (`instagr.am/baramadhans`).
   - Tahun menggunakan `font-feature-settings: 'zero' 1` (slashed zero).
+
+## Update Terbaru (Sesi Ini)
+- **Redirect Pages.dev**: Ditambahkan `functions/_middleware.js` untuk me-redirect `baramadhans.pages.dev` ke `bara.asia`.
+- **Judul Web**: Diubah menjadi "Bara's Blog" di `hugo.toml` (kedua `title`). Footer tetap "Bara Ramadhan".
+- **Custom Homepage Title**: Ditambahkan `layouts/index.html` agar judul tab di homepage hanya "Bara's Blog" (tanpa "Home |").
+- **User Select None**: Ditambahkan di `custom_head.html` untuk elemen `header .title`, `header nav`, dan `footer`.

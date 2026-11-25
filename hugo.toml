@@ -1,7 +1,7 @@
 baseURL = "https://bara.asia/"
 locale = "id-id"
 defaultContentLanguage = "id"
-title = "Bara Ramadhan"
+title = "Bara's Blog"
 theme = "hugo-bearblog"
 author = "Bara Ramadhan"
 copyright = "Copyright © 2026, Bara Ramadhan."
@@ -19,7 +19,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   description = "Situs pribadi Bara, seorang Marketing Specialist. Berisi kumpulan tulisan, pemikiran acak, serta resume lengkap saya."
-  title = "Bara Ramadhan"
+  title = "Bara's Blog"
   favicon = "images/favicon.png"
   images = ["images/share.png"]
 
