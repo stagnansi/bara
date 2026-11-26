@@ -117,3 +117,9 @@ resources/_gen/
 - **Judul Web**: Diubah menjadi "Bara's Blog" di `hugo.toml` (kedua `title`). Footer tetap "Bara Ramadhan".
 - **Custom Homepage Title**: Ditambahkan `layouts/index.html` agar judul tab di homepage hanya "Bara's Blog" (tanpa "Home |").
 - **User Select None**: Ditambahkan di `custom_head.html` untuk elemen `header .title`, `header nav`, dan `footer`.
+
+## Halaman Now & Shortcode Time-Ago
+- `content/now.md` diisi dengan cerita personal.
+- **Toggle `<details>`**: Diizinkan dengan menambahkan `[markup.goldmark.renderer] unsafe = true` di `hugo.toml`.
+- **Shortcode Time-Ago**: Dibuat `layouts/shortcodes/time-ago.html` untuk menghitung selisih hari/minggu dari `lastmod` secara otomatis.
+- **CSS Jarak**: Ditambahkan `margin-top: 1em` pada `details:first-child` di `custom_head.html` agar tidak menempel ke navigasi.

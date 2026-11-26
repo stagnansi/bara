@@ -1,0 +1,18 @@
+{{- $date := .Page.Lastmod -}}
+{{- if $date.IsZero -}}
+  {{- $date = now -}}
+{{- end -}}
+{{- $diff := now.Sub $date -}}
+{{- $totalDays := int (div $diff.Hours 24) -}}
+{{- $weeks := div $totalDays 7 -}}
+{{- $days := mod $totalDays 7 -}}
+
+{{- if eq $totalDays 0 -}}
+  hari ini
+{{- else if eq $weeks 0 -}}
+  {{ $days }} hari yang lalu
+{{- else if eq $days 0 -}}
+  {{ $weeks }} minggu yang lalu
+{{- else -}}
+  {{ $weeks }} minggu, {{ $days }} hari yang lalu
+{{- end -}}
