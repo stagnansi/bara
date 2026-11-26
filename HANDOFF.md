@@ -126,3 +126,8 @@ resources/_gen/
 
 ## Update: Hover Underline
 - Menambahkan CSS `details > summary:hover { text-decoration: underline; }` di `custom_head.html`.
+
+## Update: Footer Back to Top
+- Urutan footer diubah menjadi `2026 © Bara Ramadhan — ↑`.
+- Menambahkan panah `↑` (warna link) sebagai back-to-top tanpa JS.
+- Menambahkan `scroll-behavior: smooth` di `custom_head.html`.
